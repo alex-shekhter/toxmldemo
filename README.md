@@ -1,7 +1,7 @@
 # toxmldemo
 
 Small demo project which is written in GO and using 
-[NEX improved LEX written in GO](https://github.com/blynn/nex) and YACC approach
+[NEX](https://github.com/blynn/nex) (improved LEX written in GO) and YACC approach
 to parse and convert to XML hierarchial data with the following format:
 
 ```
