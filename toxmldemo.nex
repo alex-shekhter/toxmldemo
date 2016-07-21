@@ -1,4 +1,4 @@
-/([^ \t\r\n\{\}=]|(\\{)|(\\}))+/            { updLex( yylex, lval ); return WORD; }
+/([^ \t\r\n\{\}=]|(\\{)|(\\})|(\\})|(\\=))+/ { updLex( yylex, lval ); return WORD; }
 /=/                                         { updLex( yylex, lval ); return EQ; }
 /\{/                                        { updLex( yylex, lval ); return OCB; }
 /\}/                                        { updLex( yylex, lval ); return CCB; }

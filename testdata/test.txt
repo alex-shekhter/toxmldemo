@@ -6,7 +6,7 @@ AmpQueryRepChoice {
          tradeNo = 20160711-000000060000
          speedIndex = -1 
         \{\}
-         fake1 = 123
+\=\= ff         fake1 = 123
          fake2 =
       }
       p1 = 098
