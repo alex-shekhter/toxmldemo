@@ -12,7 +12,7 @@ AmpQueryRepChoice {
       tradeId {                                 
          tradeNo = 20160711-000000060000
          speedIndex = -1 
-        \= \{\}
+         \{\}
          fake1 = 123
          fake2 =
       }
