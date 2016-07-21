@@ -43,7 +43,6 @@ tags
 *.nn.go    
 *.yacc.go
 y.output
-*.y
 
 #
 # executable
