@@ -1,0 +1,65 @@
+/([^ \t\r\n\{\}=]|(\\{)|(\\}))+/            { updLex( yylex, lval ); return WORD; }
+/=/                                         { updLex( yylex, lval ); return EQ; }
+/\{/                                        { updLex( yylex, lval ); return OCB; }
+/\}/                                        { updLex( yylex, lval ); return CCB; }
+//
+
+package main
+
+import (
+    "os" 
+    "fmt"
+)
+
+//
+// DataLexer is created to help us with good error messages
+//
+type DataLexer struct { 
+    *Lexer 
+    col int
+    line int
+    tok string
+}
+
+func (lptr *DataLexer) Lex( lval *yySymType ) int {
+    return lptr.Lexer.Lex( lval )
+}
+
+func (lptr *DataLexer) Error( s string ) {
+    fmt.Printf( "--->>> Data Lexer ERROR line: %d; col: %d; tok: %s; msg: %s\n", lptr.line, lptr.col, lptr.tok, s )
+}
+
+// currLevel variable will be incremented every time we get '{'
+// and decremented when input token is '}'
+// This will be needed inside the parser
+var currLevel int
+
+// DataLex is the instance of our custom Lexer
+var lex DataLexer
+
+func updLex( yylex *Lexer, lval *yySymType ) {
+    lval.tok = yylex.Text();
+    lval.col = yylex.Column() + 1
+    lval.line = yylex.Line() + 1
+    if lval.tok == "{" {
+        currLevel += 1
+    } else if lval.tok == "}" {
+        currLevel -= 1
+    } 
+    lval.level = currLevel
+    lex.col = lval.col
+    lex.line = lval.line
+    lex.tok = lval.tok
+    if yyDebug >= 4 {
+        fmt.Printf( "--->>> Data Lexer line: %d; col: %d; level: %d; tok: %s;\n", lex.line, lex.col, lval.level, lex.tok ) 
+    }
+}
+
+func main() {
+    lex.Lexer = (NewLexer( os.Stdin ))
+    /***
+    yyDebug = 10
+    ***/
+    yyErrorVerbose = true
+    yyParse( &lex )
+}

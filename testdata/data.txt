@@ -1,0 +1,597 @@
+AmpQueryRepChoice {
+
+   tradeRep {
+
+      tradeId {
+
+         tradeNo = 20160711-000000060000
+
+         speedIndex = -1
+
+      }
+
+      statics {
+
+         chainId = 1
+
+         buyOrderId {
+
+            orderDate = 20160711
+
+            orderNo = 936
+
+            orderNoSuffix = 0
+
+            speedIndex = -1
+
+         }
+
+         sellOrderId {
+
+            orderDate = 20160711
+
+            orderNo = 933
+
+            orderNoSuffix = 0
+
+            speedIndex = -1
+
+         }
+
+         time {
+
+            date = 20160711
+
+            time = 51852
+
+            msec = 920
+
+         }
+
+         timeUTC {
+
+            date = 20160711
+
+            time = 91852
+
+            msec = 920
+
+         }
+
+         buyBrokerRef =
+
+         sellBrokerRef =
+
+         buyTraderId = MS_FIX_USR1
+
+         sellTraderId = KDC_JETS_TRD1
+
+         buyFirmId = MSTAN
+
+         sellFirmId = JETS
+
+         buyTrdAccId = MSDWU.NY
+
+         sellTrdAccId = JETS.NY
+
+         buyTrdAccName = MORGAN STANLEY CAPITAL SERVICES NYK
+
+         sellTrdAccName = JETS NYK
+
+         secBoardId {
+
+            secCode = L-USD 5Y.sb
+
+            boardId = LCH_USD_AUTO
+
+         }
+
+         instrId = L-USDSWPSB
+
+         origQuantity {
+
+            value = 100.0
+
+            decimals = 2
+
+         }
+
+         value {
+
+            value = 0.0
+
+            decimals = 2
+
+         }
+
+         settlementValue {
+
+            value = 0.0
+
+            decimals = -1
+
+         }
+
+        tradeSourceId = A
+
+         tradeSourceName = On
+
+         buyExtOrderId = IS20005375454239D50
+
+         settleDate = 20160713
+
+         originalTradeId {
+
+            tradeNo = 20160711-000000060015
+
+            speedIndex = -1
+
+         }
+
+         isAutoTrade = TRUE
+
+         isBuyOrderPublic = FALSE
+
+         isSellOrderPublic = FALSE
+
+         buyStrategyTradeType = outright
+
+         sellStrategyTradeType = outright
+
+         isBuyExternal = FALSE
+
+         isSellExternal = FALSE
+
+         bidIsDoneIfTouched = FALSE
+
+         offerIsDoneIfTouched = FALSE
+
+         buyMarkitWireId = 29358519
+
+         sellMarkitWireId = 29358519
+
+         prvlgdWorkUpTriggered = FALSE
+
+         isRFQ = FALSE
+
+         requiredPermittedType = required
+
+      }
+
+      dynamics {
+
+         status = matched
+
+         amendTime {
+
+            date = 20160711
+
+            time = 51939
+
+            msec = 637
+
+         }
+
+         buySTPStatus = stpStatusSTPConfirmed
+
+         sellSTPStatus = stpStatusSTPConfirmed
+
+         buyWorkUpQuantity {
+
+            value = 0.0
+
+            decimals = -1
+
+         }
+
+         sellWorkUpQuantity {
+
+            value = 0.0
+
+            decimals = -1
+
+         }
+
+         negDealOrderId {
+
+            orderDate = 0
+
+            orderNo = 0
+
+            orderNoSuffix = 0
+
+            speedIndex = -1
+
+         }
+
+         price {
+
+            value = 0.97
+
+            decimals = 5
+
+         }
+
+         quantity {
+
+            value = 100.0
+
+            decimals = 2
+
+         }
+
+         extraFieldsList[0] {
+
+            key = isAnonymous
+
+            value = FALSE
+
+         }
+
+         extraFieldsList[1] {
+
+            key = buyFirmSelfClearing
+
+            value = TRUE
+
+         }
+
+         extraFieldsList[2] {
+
+            key = sellFirmSelfClearing
+
+            value = TRUE
+
+         }
+
+         extraFieldsList[3] {
+
+            key = buyEnteredByIB
+
+            value = FALSE
+
+         }
+
+         extraFieldsList[4] {
+
+            key = sellEnteredByIB
+
+            value = FALSE
+
+         }
+
+         extraFieldsList[5] {
+
+            key = BuyClearingToken64
+
+            value =
+
+         }
+
+         extraFieldsList[6] {
+
+            key = buyClearingHouse
+
+            value = LCH
+
+         }
+
+         extraFieldsList[7] {
+
+            key = SellClearingToken64
+
+            value =
+
+         }
+
+         extraFieldsList[8] {
+
+            key = sellClearingHouse
+
+            value = LCH
+
+         }
+
+         extraFieldsList[9] {
+
+            key = autoProcessing
+
+            value = YES
+
+         }
+
+         extraFieldsList[10] {
+
+            key = buyClearingId
+
+            value = LCH00020324761
+
+         }
+
+         extraFieldsList[11] {
+
+            key = sellClearingId
+
+            value = LCH00020324806
+
+         }
+
+         extraFieldsList[12] {
+
+            key = reportingCounterpart
+
+            value = Buyer
+
+         }
+
+      }
+
+      tradeDetails {
+
+         buySTPVersion = 1
+
+         sellSTPVersion = 1
+
+         unadjustedMaturityDate = 20210713
+
+         fixedPaymtSchedule = 13JAN17 13JUL17 16JAN18 13JUL18 14JAN19 15JUL19 13JAN20 13JUL20 13JAN21 13JUL21
+
+         floatingPaymtSchedule = 13OCT16 13JAN17 13APR17 13JUL17 13OCT17 16JAN18 13APR18 13JUL18 15OCT18 14JAN19 15APR19 15JUL19 15OCT19 13JAN20 14APR20 13JUL20
+
+         floating2PaymtSchedule =
+
+         floatingIndexRef = LIBOR01
+
+         floating2IndexRef =
+
+         law =
+
+         fixedBroAmt {
+
+            value = 634.03
+
+            decimals = 2
+
+         }
+
+         fixedBroCurrency = USD
+
+         fltgBroAmt {
+
+            value = 608.65
+
+            decimals = 2
+
+         }
+
+         fltgBroCurrency = USD
+
+         fltg2BroCurrency =
+
+         compoundingPeriod = No Compounding
+
+         breakClauseRefBanksText =
+
+         notes =
+
+         fixedBroRate {
+
+            value = 1.25E-4
+
+            decimals = 9
+
+         }
+
+         fltgBroRate {
+
+            value = 1.25E-4
+
+            decimals = 9
+
+         }
+
+         immRolls = FALSE
+
+         fixedVia =
+
+         floatingVia =
+
+         floating2Via =
+
+         bondExchangeFlag = FALSE
+
+         stub = Front
+
+         paySwiftCode = MSCSUS33
+
+         recSwiftCode = MEGA1234
+
+         maturityDate = 20210713
+
+         fixedRatePayFreq = SEMI-ANNUALLY
+
+         breakClauseYrsStart = 0
+
+         breakClauseFreq =
+
+         currency = USD
+
+         startDate = 20160713
+
+         fixedRateBasis = 30/360
+
+         paymentHolidays1 = NYK LDN
+
+         paymentHolidays2 = NYK LDN
+
+         paymentHolidays3 =
+
+         paymentHolidays4 =
+
+         floatingRateIndex = 3 Month LIBOR
+
+         floatingRate2Index =
+
+         floatingRatePaymentFreq = QUARTERLY
+
+         floatingRate2PaymentFreq =
+
+         floatingRateBasis = ACT/360
+
+         floatingRate2Basis =
+
+         floatingPaymentConvention = MODIFIEDF
+
+         floating2PaymentConvention =
+
+         fixedPaymentConvention = MODIFIEDF
+
+         floatingRateFixingHolidays = LDN
+
+         floatingRate2FixingHolidays =
+
+         endEndRolls =
+
+         documentation = ISDA
+
+         buyBrokerUserName = Sebastien Cournoyer
+
+         sellBrokerUserName = Kayle Da Cruz1
+
+         buyTraderUserName = Sebastien Cournoyer
+
+         sellTraderUserName = Kayle Da Cruz1
+
+         buyAcceptAllowed = TRUE
+
+         sellAcceptAllowed = TRUE
+
+         externalTradeId =
+
+         buyGuiReference = 9GB222Q3
+
+         sellGuiReference = 9GB222Q3
+
+         fxResetReference =
+
+         fxResetHolidays =
+
+         autoClearing = TRUE
+
+         usi = 1010000296R3000000000020160711000000060000
+
+         inverseUsi =
+
+         clearingLEI = F226TOH6YD6XJB17KS62
+
+         buyTrdAccLEI = VB7RXNZGO6KVDABYB880
+
+         sellTrdAccLEI = 1234-56-1234242DEFET
+
+         buyClearingMemberFirmTrdAccLEI = I7331LVCZKQKX5T7XV54
+
+         sellClearingMemberFirmTrdAccLEI = JETS_LEI
+
+         iswapLEI = 213800C2MCT5QBE5VW36
+
+         buyUSI = SW10000000LCH0002032476110428601
+
+         sellUSI = SW10000000LCH0002032480610428601
+
+         clearingIntermediaryId = MW
+
+         tradeRepositoryStatus = 0
+
+         buyClearingMemberFirmTrdAccId {
+
+            firmId = MSTAN.CLR
+
+            trdAccId = MSTAN.LCH
+
+         }
+
+         sellClearingMemberFirmTrdAccId {
+
+            firmId = JETS.CLR
+
+            trdAccId = JETS.LCH
+
+         }
+
+         sdrLEI = MLDY5N6PZ58ZE60QU102
+
+         sdrName = DTCC
+
+         regulatoryType = sef
+
+         blockTrade = FALSE
+
+         buyCLHClearingLimitConsumed {
+
+            value = 489.28
+
+            decimals = 2
+
+         }
+
+         buySelfCLMClearingLimitConsumed {
+
+            value = 489.28
+
+            decimals = 2
+
+         }
+
+         buyCLMClearingLimitConsumed {
+
+            value = 489.28
+
+            decimals = 2
+
+         }
+
+         sellCLHClearingLimitConsumed {
+
+            value = 489.28
+
+            decimals = 2
+
+         }
+
+         sellSelfCLMClearingLimitConsumed {
+
+            value = 489.28
+
+            decimals = 2
+
+         }
+
+         sellCLMClearingLimitConsumed {
+
+            value = 489.28
+
+            decimals = 2
+
+         }
+
+         swapRollDate = 13
+
+         mktPrice {
+
+            value = 0.96
+
+            decimals = 5
+
+         }
+
+         clearingHouseFirmId = LCH
+
+         buyTradeClearingStatus = Released
+
+         sellTradeClearingStatus = Released
+
+      }
+
+   }
+
+}

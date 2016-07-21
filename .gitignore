@@ -22,3 +22,30 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+#
+# VIM
+#
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags
+
+#
+# NEX and YACC
+#
+*.nn.go    
+*.yacc.go
+y.output
+*.y
+
+#
+# executable
+#
+toxmldemo

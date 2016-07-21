@@ -1,0 +1,15 @@
+AmpQueryRepChoice {
+
+   tradeRep {                                   
+
+      tradeId {                                 
+      }
+      statics {                                 
+         buyOrderId {                           
+         }
+         sellOrderId {                          
+         }
+      }
+   }
+
+}

@@ -1,0 +1,34 @@
+AmpQueryRepChoice {
+
+   tradeRep {                                   
+
+      tradeId {                                 
+         tradeNo = 20160711-000000060000
+         speedIndex = -1 
+        \{\}
+         fake1 = 123
+         fake2 =
+      }
+      p1 = 098
+      p2 = SDF
+      p3 =
+      p4 = RTY 
+GHT
+FRE
+      statics {                                 
+         chainId = 1                            
+         buyOrderId {                           
+            orderDate = 20160711                
+            orderNo = 936                       
+         }
+         gol1 = qwdef
+         gol2 = fsdsfsfsfsffs
+         sellOrderId {                          
+            so1 = 11111                         
+            2222
+            so2 =                               
+         }
+         gol3 = asdrethheaw
+      }
+   }
+}
